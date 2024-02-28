@@ -15,8 +15,14 @@ def get_latest_tag():
 
 
 def download_as_bytes_with_progress(url: str, name: str = None) -> bytes:
+    # Check for Proxy settings in the environment
+    proxies = {
+        'http': os.environ.get('http_proxy', ''),
+        'https': os.environ.get('https_proxy', ''),
+    }
+    print('Using proxies:', proxies)
     # source: https://stackoverflow.com/questions/71459213/requests-tqdm-to-a-variable
-    resp = requests.get(url, stream=True, allow_redirects=True)
+    resp = requests.get(url, stream=True, allow_redirects=True, proxies=proxies)
     total = int(resp.headers.get('content-length', 0))
     bio = io.BytesIO()
     if name is None:
