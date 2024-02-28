@@ -1,4 +1,6 @@
-# pix2tex - LaTeX OCR
+# pix2tex - LaTeX OCR - Hacked Version
+
+This hack aims to bypass the installation, run it directly from the source code.
 
 [![GitHub](https://img.shields.io/github/license/lukas-blecher/LaTeX-OCR)](https://github.com/lukas-blecher/LaTeX-OCR) [![Documentation Status](https://readthedocs.org/projects/pix2tex/badge/?version=latest)](https://pix2tex.readthedocs.io/en/latest/?badge=latest) [![PyPI](https://img.shields.io/pypi/v/pix2tex?logo=pypi)](https://pypi.org/project/pix2tex) [![PyPI - Downloads](https://img.shields.io/pypi/dm/pix2tex?logo=pypi)](https://pypi.org/project/pix2tex) [![GitHub all releases](https://img.shields.io/github/downloads/lukas-blecher/LaTeX-OCR/total?color=blue&logo=github)](https://github.com/lukas-blecher/LaTeX-OCR/releases) [![Docker Pulls](https://img.shields.io/docker/pulls/lukasblecher/pix2tex?logo=docker)](https://hub.docker.com/r/lukasblecher/pix2tex) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lukas-blecher/LaTeX-OCR/blob/main/notebooks/LaTeX_OCR_test.ipynb) [![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/lukbl/LaTeX-OCR)
 
@@ -10,6 +12,14 @@ The goal of this project is to create a learning based system that takes an imag
 To run the model you need Python 3.7+
 
 If you don't have PyTorch installed. Follow their instructions [here](https://pytorch.org/get-started/locally/).
+
+Run it directly from the source code:
+
+```bash
+python3 lauch.py
+```
+
+## Installation
 
 Install the package `pix2tex`: 
 
